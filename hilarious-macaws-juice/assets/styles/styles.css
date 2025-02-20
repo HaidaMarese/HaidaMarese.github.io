@@ -1,0 +1,158 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #1C6D49;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #f9f9f9;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+h2 {
+    color: #253c03;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input[type="text"], form input[type="email"] {
+    background-color: #f9f9f9;
+}
+
+form textarea {
+    height: 100px;
+    background-color: #f9f9f9;
+    resize: vertical;
+}
+
+form button {
+    background-color: #a1b48d;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #1C6D49;
+}
+
+
+footer {
+    background-color: #1C6D49;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+footer em {
+    font-style: italic;
+}
+
+
+a {
+    color: #8c9a77;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5c6b4b;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+ul li strong {
+    color: #8c9a77;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

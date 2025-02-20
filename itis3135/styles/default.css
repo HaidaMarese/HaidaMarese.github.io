@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* Header */
 header {
     background-color: #ebf6f5;
     color: white;
@@ -31,7 +30,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Main Content */
 main {
     max-width: 900px;
     margin: 20px auto;
@@ -49,7 +47,6 @@ p {
     line-height: 1.6;
 }
 
-/* Footer */
 footer {
     background-color: #ebf6f5;
     color: black;
