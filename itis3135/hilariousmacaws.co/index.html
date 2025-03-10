@@ -20,6 +20,7 @@
             text-align: center;
             padding: 30px;
             background-color: #1C6D49;
+            position: relative;
         }
 
         header h1 {
@@ -29,6 +30,14 @@
 
         .logo {
             max-width: 100%;
+            height: auto;
+        }
+
+        .logo-left {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            max-width: 100px; 
             height: auto;
         }
 
@@ -123,8 +132,10 @@
 <body>
 
     <header>
+      
+        <img src="assets/Business Logo.png" alt="Second Logo" class="logo-left">
         <h1>Hilarious Macaw Enterprise</h1>
-        <img src="assets/image_logo.png" alt="Hilarious Macaw Logo" class="logo">
+        <img src="assets/image.png" alt="Hilarious Macaw Logo" class="logo">
     </header>
 
     <main>
