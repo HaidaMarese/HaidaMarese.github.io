@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+    <title>Adventure Travel</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden; 
+        }
+        header {
+            background: linear-gradient(135deg, #005f73, #0a9396);
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 12px 20px;
+            background: #0a9396;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: #94d2bd;
+            transform: scale(1.1);
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        section {
+            display: none;
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease-in-out;
+            max-width: 800px;
+        }
+        .active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #005f73;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .validation-buttons img {
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Adventure Travel</h1>
+        <nav>
+            <a href="#" onclick="showSection('home')">🏔 The Adventure Begins</a>
+            <a href="#" onclick="showSection('who')">🌍 About the Adventurer</a>
+            <a href="#" onclick="showSection('when')">🕒 Best Time to Explore</a>
+            <a href="#" onclick="showSection('where')">📍 Top Destinations</a>
+            <a href="#" onclick="showSection('how')">🛠 Getting Started</a>
+            <a href="#" onclick="showSection('why')">🔥 The Thrill of Adventure</a>
+            <a href="#" onclick="showSection('ai-prompts')">🤖 AI Prompts</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="active" aria-labelledby="home-heading">
+            <h2 id="home-heading">The Adventure Begins</h2>
+            <p>Explore breathtaking landscapes and create unforgettable memories.</p>
+            <img src="images/Imag1.webp" alt="A hiker standing on a mountain peak with breathtaking views of the surrounding landscape, symbolizing the beginning of an adventure" />
+            <p><em>"A person hiking in the mountains, enjoying the adventure, photorealistic style."</em></p>
+            <p>Adventure travel isn't just about the destination; it's about the journey and the people you meet along the way. Whether you're hiking through mountains or walking on sandy beaches, there's always something new to discover.</p>
+        </section>
+        
+        <section id="who" aria-labelledby="who-heading">
+            <h2 id="who-heading">About the Adventurer</h2>
+            <p>Meet our travel enthusiast exploring the world.</p>
+            <img src="images/image0.png" alt="A smiling traveler with a backpack standing in a beautiful outdoor setting, ready for adventure" />
+            <p>This adventurer has been to remote villages, majestic mountain ranges, and vast deserts. Their passion for exploring new cultures and uncharted territories is what fuels their journey.</p>
+        </section>
+        
+        <section id="when" aria-labelledby="when-heading">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <div style="text-align: center;">
+                    <img src="images/Spring.png" alt="A cherry blossom tree in full bloom during spring in Japan, with a person enjoying the view" style="width: 100%; max-width: 400px; border-radius: 10px;">
+                    <h2 id="when-heading">Spring</h2>
+                    <p>Ideal for cherry blossoms in Japan and hiking in Europe.</p>
+                </div>
+        
+                <div style="text-align: center;">
+                    <img src="images/Winter.png" alt="A view of the Northern Lights in the winter sky above a snowy landscape, showcasing the magic of winter adventures" style="width: 100%; max-width: 400px; border-radius: 10px;">
+                    <h2>Winter</h2>
+                    <p>Great for skiing, northern lights viewing, and desert adventures.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="where" aria-labelledby="where-heading">
+            <h2 id="where-heading">Top Destinations</h2>
+            <p>From snowy peaks to tropical beaches, find your next adventure.</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div style="text-align: center; max-width: 300px;">
+                    <img src="images/patagonia.png" alt="Patagonia, Argentina: A scenic view of rugged mountains and glaciers, perfect for adventure travelers" style="width: 100%; border-radius: 10px;">
+                    <h3>Patagonia, Argentina</h3>
+                    <p>A paradise for trekkers and nature lovers.</p>
+                </div>
+        
+                <div style="text-align: center; max-width: 300px;">
+                    <img src="images/bali.png" alt="Bali, Indonesia: A tranquil beach with crystal-clear water, ideal for surfers and explorers" style="width: 100%; border-radius: 10px;">
+                    <h3>Bali, Indonesia</h3>
+                    <p>A mix of adventure and relaxation with surfing and volcano hikes.</p>
+                </div>
+        
+                <div style="text-align: center; max-width: 300px;">
+                    <img src="images/swiss-alps.png" alt="Swiss Alps, Switzerland: Snow-covered mountains in the Swiss Alps, perfect for skiing and hiking" style="width: 100%; border-radius: 10px;">
+                    <h3>Swiss Alps, Switzerland</h3>
+                    <p>Ideal for skiing, hiking, and breathtaking landscapes.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="how" aria-labelledby="how-heading">
+            <h2 id="how-heading">Preparing for Your Adventure</h2>
+            <p>Set yourself up for a seamless and enriching travel experience with these essential tips.</p>
+        
+            <div class="travel-tip">
+                <h3>Pack Efficiently</h3>
+                <p>Prioritize essential items, opt for lightweight gear, and choose versatile clothing.</p>
+                <img src="images/backpack%20packed.webp" alt="Travel backpack packed with essential items, showcasing efficient packing for adventure trips" />
+            </div>
+        
+            <div class="travel-tip">
+                <h3>Prioritize Safety</h3>
+                <p>Research your destination, monitor weather conditions, and keep emergency contacts accessible.</p>
+                <img src="images/Safety.png" alt="A person reviewing safety guidelines and emergency contacts for a safe adventure trip" />
+            </div>
+        
+            <div class="travel-tip">
+                <h3>Immerse in the Culture</h3>
+                <p>Familiarize yourself with local customs, etiquette, and key phrases to enhance your journey.</p>
+                <img src="images/Interaction.png" alt="A traveler interacting with local people and learning about the culture of their destination" />
+            </div>
+        </section>
+        
+        <section id="why" aria-labelledby="why-heading">
+            <h2 id="why-heading">The Thrill of Adventure</h2>
+            <p>Why adventure travel changes lives.</p>
+            <p>Adventure travel provides an opportunity to step outside your comfort zone, challenge yourself, and experience the world in a way that’s both thrilling and transformative. From scaling mountain peaks to navigating unfamiliar cultures, these experiences can teach resilience, foster personal growth, and create unforgettable memories.</p>
+            <figure>
+                <img src="images/thrill.webp" alt="A person standing on top of a mountain, overlooking the vast landscape and feeling the excitement of adventure" width="800" />
+                <figcaption>Reaching the summit is a moment of triumph.</figcaption>
+            </figure>
+        </section>
+
+        <section id="ai-prompts" aria-labelledby="ai-prompts-heading">
+            <h2 id="ai-prompts-heading">AI Prompts</h2>
+            <p>All images displayed on this page have been created using advanced AI generation techniques.</p>
+            <p>I utilized AI to assist with various tasks, including troubleshooting technical issues, to streamline the process and enhance efficiency.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed by <a href="https://webpages.charlotte.edu/hmakouan/">Haida Makouangou || Hilarious Macaw</a></p>
+        <div class="validation-buttons">
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="Validate CSS">
+                <img src="images/css_valiadation.jpg" alt="CSS validation">
+            </a>
+            <a href="https://validator.w3.org/" target="_blank" title="Validate HTML">
+                <img src="images/Html_validation.jpg" alt="HTML validation">
+            </a>
+        </div>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach((section) => { 
+                section.classList.remove('active');
+            });
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+    
+</body>
+</html>
