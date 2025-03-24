@@ -1,11 +1,14 @@
- body {
+/* Global Styles */
+body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     margin: 0;
     padding: 0;
     color: #333;
+    box-sizing: border-box;
 }
 
+/* Header */
 header {
     background-color: #1C6D49;
     padding: 20px;
@@ -13,47 +16,118 @@ header {
     text-align: center;
 }
 
-header h1 {
+.site-title {
     margin: 0;
     font-size: 2.5em;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #f9f9f9;
+    background-color: #144c2a;
 }
 
+/* Main Content */
 main {
-    padding: 20px;
+    padding: 50px 20px;
+    text-align: center;
     background-color: white;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 h2 {
-    color: #253c03;
-    font-size: 2em;
-    margin-bottom: 15px;
+    color: #1C6D49;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
+main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Product List */
+.product-list {
+    padding-left: 20px; /* Optional: Add padding to align the list */
+    margin: 0;
+}
+
+.product-list li {
+    list-style-position: inside; /* Ensures the bullets are inside the list item */
+    padding-left: 10px; /* Adjust this value to align text closer to the bullet */
+    margin: 5px 0; /* Optional: Adds spacing between list items */
+}
+
+/* Button */
+.button {
+    background-color: #1C6D49;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #144c2a;
+}
+
+/* Footer */
+footer {
+    background-color: #1C6D49;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #a8d5ba;
+}
+
+/* Form Styles */
 form {
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -68,22 +142,19 @@ form label {
     display: block;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-}
-
-form input[type="text"], form input[type="email"] {
-    background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
 form textarea {
     height: 100px;
-    background-color: #f9f9f9;
     resize: vertical;
 }
 
@@ -97,26 +168,14 @@ form button {
     cursor: pointer;
     width: 100%;
     margin-top: 10px;
+    box-sizing: border-box;
 }
 
 form button:hover {
     background-color: #1C6D49;
 }
 
-
-footer {
-    background-color: #1C6D49;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-footer em {
-    font-style: italic;
-}
-
-
+/* Links */
 a {
     color: #8c9a77;
     text-decoration: none;
@@ -126,29 +185,15 @@ a:hover {
     color: #5c6b4b;
 }
 
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 1.2em;
-    margin: 8px 0;
-}
-
-ul li strong {
-    color: #8c9a77;
-}
-
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
+    .site-title {
         font-size: 2em;
     }
 
     nav ul {
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {

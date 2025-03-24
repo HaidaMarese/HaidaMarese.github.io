@@ -4,76 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hilarious Macaw Juice - My Design Firm</title>
-
+    <title>Hilarious Macaw Juice - Premium Natural Juices</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #A8D5BA, #f5f5f5);
-            color: #333;
-            line-height: 1.6;
+        body, h1, h2, h3, p, ul, li, a {
             margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1C6D49;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            padding: 10px 20px;
+            background-color: #1C6D49;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #144c2a;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #A8D5BA, #f5f5f5);
+            line-height: 1.6;
             padding: 0;
         }
 
         header {
-            text-align: center;
-            padding: 30px;
             background-color: #1C6D49;
+            padding: 20px;
+            text-align: center;
             position: relative;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: #000000;
-        }
-
-        .logo {
-            max-width: 100%;
-            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .logo-left {
             position: absolute;
-            left: 20px;
-            top: 20px;
-            max-width: 100px; 
+            left: 10px;
+            top: 10px;
+            width: 120px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .image {
+            max-width: 80%;
             height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         main {
-            padding: 40px 20px;
             text-align: center;
+            padding: 40px 20px;
         }
 
-        main h2 {
+        h2:hover {
             font-size: 2rem;
-            color: #000000;
-            margin-bottom: 15px;
+            color: #524f4f;
+            margin-top: 10px;
         }
 
-        main p {
-            font-size: 1.1rem;
+        h4 {
+            font-size: 1.5rem;
+            color: #1C6D49;
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.2rem;
             margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: left;
-            display: inline-block;
-            font-size: 1.1rem;
-        }
-
-        ul li {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-
-        ul li::before {
-            content: "✔";
-            color: #000000;
-            margin-right: 10px;
         }
 
         .contact-info {
@@ -85,101 +112,113 @@
             max-width: 400px;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        .contact-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-
-        .contact-info p {
-            font-size: 1.1rem;
-            margin: 5px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         footer {
             background-color: #1C6D49;
-            color: white;
-            text-align: center;
+            color: #fff;
             padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            font-size: 0.9rem;
-        }
-
-        footer p {
-            color: #000000;
-            margin: 5px 0;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         }
 
         footer a {
-            color: white;
+            color: #fff;
             text-decoration: none;
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        .validation-logo {
+            width: 88px;
+            height: 31px;
+            margin: 10px;
         }
 
-        .validation-logo {
-            width: 90px;
-            height: auto;
-            margin: 10px;
+        .button {
+            background-color: #1C6D49;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #144c2a;
+        }
+
+        .why-choose-us {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            justify-items: center;
+            margin-top: 30px;
+        }
+
+        .why-choose-us p {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
 
-    <header>
-      
-        <img src="assets/Business Logo.png" alt="Second Logo" class="logo-left">
-        <h1>Hilarious Macaw Enterprise</h1>
-        <img src="assets/image.png" alt="Hilarious Macaw Logo" class="image">
-    </header>
+<header>
+    <img src="assets/images/Imagelogo.jpg" alt="Hilarious Macaw Logo" class="logo-left">
+    <h1>Welcome to Hilarious Macaw Enterprise</h1>
+    <img src="assets/images/imageHM.jpg" alt="Fresh and Natural Juice" class="image">
+</header>
 
-    <main>
-        <h2>Our Services</h2>
-        <p>At Hilarious Macaw Enterprises, we offer the finest natural fruit juices combined with a fun, interactive experience. Visit us and enjoy blending your own juices with our quirky mascot!</p>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-        <h2>Why Choose Us?</h2>
-        <ul>
-            <li>Fresh, high-quality ingredients in every juice.</li>
-            <li>Interactive experience with our lovable mascot.</li>
-            <li>Customizable juice blends made just the way you like it.</li>
-            <li>Vibrant, fun atmosphere for all ages to enjoy.</li>
-            <li>Comprehensive nutrition information for each juice.</li>
-        </ul>
+<main>
+    <h2>About Our Services</h2>
+    <p>We offer the finest natural fruit juices, complemented by a fun and engaging experience, making every sip enjoyable and refreshing.</p>
+    <h4>Why Choose Us?</h4>
 
-        <p>Contact us to schedule an event or get more information:</p>
+    <div class="why-choose-us">
+        <p>Fresh, high-quality ingredients in every juice.</p>
+        <p>Interactive experience with our lovable mascot.</p>
+        <p>Customizable juice blends made just the way you like it.</p>
+        <p>Vibrant, fun atmosphere for all ages to enjoy.</p>
+        <p>Comprehensive nutrition information for each juice.</p>
+    </div>
 
-        <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p>Email: <a href="mailto:info@hilariousmacaw.com">info@hilariousmacaw.com</a></p>
-            <p>Phone: +1 (000) 000-0000</p>
-            <p>Address: 000 Juicy Lane, Charlotte, NC</p>
-        </div>
-    </main>
+    <a href="mailto:info@hilariousmacaw.com" class="button">Contact Us</a>
 
-    <footer>
-        <p>&copy; 2025 Hilarious Macaw. All rights reserved.</p>
-        <p>Juicing the world, one laugh at a time.</p>
-        <p>Page designed by <a href="https://webpages.charlotte.edu/hmakouan/" target="_blank">My Home page</a></p>
-    
+    <div class="contact-info">
+        <p><strong>Get in Touch</strong></p>
+        <p>Email: <a href="mailto:info@hilariousmacaw.com">info@hilariousmacaw.com</a></p>
+        <p>Phone: +1 (000) 000-0000</p>
+        <p>Address: 000 Juicy Lane, Charlotte, NC</p>
+    </div>
+</main>
+
+<footer>
+    <p><strong>Stay Connected</strong></p>
+    <p>&copy; 2025 Hilarious Macaw. All rights reserved.</p>
+    <p>Website designed by <a href="https://webpages.charlotte.edu/hmakouan/" target="_blank">My Home Page</a></p>
     <p>
-        
-        
-        
-        <p>
-            <a href="https://validator.w3.org/nu/?doc=https://yourwebsite.com" target="_blank">
-                <img src="assets/html_val(2).png" alt="Validation HTML!" class="validation-logo">
-            </a>
-
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://yourwebsite.com" target="_blank">
-                <img src="assets/css_val (1).png" alt="Validation CSS!" class="validation-logo">
-            </a>
-        </p>
-    </footer>
+        <a href="https://validator.w3.org/nu/?doc=https://yourwebsite.com" target="_blank">
+            <img src="assets/images/HTMLVal.jpg" alt="HTML Validation" class="validation-logo">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://yourwebsite.com" target="_blank">
+            <img src="assets/images/CSSVal.jpg" alt="CSS Validation" class="validation-logo">
+        </a>
+    </p>
+</footer>
 
 </body>
 </html>
