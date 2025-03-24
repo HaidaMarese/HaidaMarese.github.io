@@ -86,8 +86,10 @@ footer {
 footer nav a {
     color: #333;
     text-decoration: none;
+    font-size: 1em;  
     padding: 5px 10px;
     margin: 0 10px;
+    display: inline-block;
 }
 
 footer nav a:hover {
@@ -100,32 +102,25 @@ main, .maincontainer {
     max-width: 1200px; 
 }
 
-
 @media screen and (min-width: 981px) and (max-width: 1400px) {
-   
     .laptop {
         font-size: 2.4em; 
         color: #E3B505;  
     }
 }
 
-
 @media screen and (min-width: 601px) and (max-width: 980px) {
-    
     .tablet {
         font-size: 2em; 
         color: #1C6D49;  
     }
-
     nav a {
         font-size: 1.5em; 
         padding: 12px 25px; 
     }
-
     nav img {
         max-width: 120px; 
     }
-
     .nav-container {
         flex-direction: column;
         align-items: center;
@@ -134,21 +129,17 @@ main, .maincontainer {
 }
 
 @media screen and (min-width: 370px) and (max-width: 600px) {
-    
     .mobile {
         font-size: 1.8em; 
         color: #E3B505;  
     }
-
     nav a {
         font-size: 1.2em; 
         padding: 10px 20px; 
     }
-
     nav img {
         max-width: 100px; 
     }
-
     .nav-container {
         flex-direction: column;
         align-items: center;
@@ -159,7 +150,6 @@ main, .maincontainer {
 html, body {
     all: initial;
 }
-
 
 main, .maincontainer {
     width: 95%; 
@@ -173,13 +163,11 @@ main, .maincontainer {
     }
 }
 
-
 @media screen and (min-width: 601px) and (max-width: 980px) {
     #colorbox {
         background-color: orange;
     }
 }
-
 
 @media screen and (min-width: 370px) and (max-width: 600px) {
     #colorbox {
