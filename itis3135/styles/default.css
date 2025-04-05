@@ -1,3 +1,7 @@
+.selected {
+    box-sizing: border-box;
+  }
+
 html, body {
     height: 100%;
     font-family: 'Arial', sans-serif;
@@ -10,6 +14,7 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
   }
   
+  
   body {
     display: flex;
     flex-direction: column;
@@ -17,6 +22,7 @@ html, body {
     min-height: 100vh;
   }
   
+
   header {
     background-color: #ffffff;
     color: #1C6D49;
@@ -25,7 +31,6 @@ html, body {
     border-bottom: 2px solid #1C6D49;
   }
   
-  /* Headings */
   h1, h2, h3 {
     color: #1C6D49;
     margin-bottom: 20px;
@@ -42,9 +47,8 @@ html, body {
   h3:hover {
     font-size: 1.2em;
   }
- 
-
-main, .maincontainer {
+  
+  main, .maincontainer {
     width: 95%;
     max-width: 1200px;
     margin: 30px auto;
@@ -55,7 +59,7 @@ main, .maincontainer {
     box-sizing: border-box; 
   }
   
-  
+
   footer {
     background-color: #ffffff;
     color: #333;
@@ -81,7 +85,7 @@ main, .maincontainer {
     outline: none;
   }
   
-
+  
   table {
     width: 100%;
     border-collapse: collapse;
@@ -128,7 +132,6 @@ main, .maincontainer {
     padding: 10px;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     body {
       font-size: 14px;
@@ -148,4 +151,6 @@ main, .maincontainer {
       font-size: 15px;
     }
   }
+  
+ 
   

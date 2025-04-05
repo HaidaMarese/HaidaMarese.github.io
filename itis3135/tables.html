@@ -29,6 +29,14 @@
       background-color: #333;
       color: white;
     }
+
+    tbody tr:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #ffffff;
+    }
   </style>
 </head>
 
@@ -40,7 +48,6 @@
   <main>
     <h2>Data Tables</h2>
 
-   
     <h3>Staff Data Overview</h3>
     <ol>
       <li>D.I. von Briesen - dvonbri1@hilariousmacaw.com - 25</li>
@@ -53,7 +60,6 @@
       <li>Alice Waters - alice.waters@hilariousmacaw.com - 2</li>
       <li>John Doe - john.doe@hilariousmacaw.com - 4</li>
     </ol>
-
 
     <h3>Employee Data in Simple Table</h3>
     <table aria-label="Simple employee data table">
@@ -78,11 +84,10 @@
       </tbody>
     </table>
 
-   
     <h3>Employee Data in Complex Table</h3>
     <figure>
       <figcaption>Employee Information Categorized by Department</figcaption>
-      <table aria-describedby="employeeInfoTable">
+      <table aria-label="Complex employee data table">
         <thead>
           <tr>
             <th scope="col">Department</th>
@@ -95,60 +100,60 @@
         <tbody>
           <tr>
             <td rowspan="2">Marketing</td>
-            <td id="von">D.I. von Briesen</td>
-            <td headers="von">dvonbri1@hilariousmacaw.com</td>
-            <td headers="von">25</td>
-            <td headers="von">$7500</td>
+            <td>D.I. von Briesen</td>
+            <td>dvonbri1@hilariousmacaw.com</td>
+            <td>25</td>
+            <td>$7500</td>
           </tr>
           <tr>
-            <td id="esam">Esam Abdullah</td>
-            <td headers="esam">eabdullah@hilariousmacaw.com</td>
-            <td headers="esam">5</td>
-            <td headers="esam">$5500</td>
+            <td>Esam Abdullah</td>
+            <td>eabdullah@hilariousmacaw.com</td>
+            <td>5</td>
+            <td>$5500</td>
           </tr>
           <tr>
             <td rowspan="3">Sales</td>
-            <td id="medina">Medina Gomez</td>
-            <td headers="medina">gomez_med8@hilariousmacaw.com</td>
-            <td headers="medina">3</td>
-            <td headers="medina">$4200</td>
+            <td>Medina Gomez</td>
+            <td>gomez_med8@hilariousmacaw.com</td>
+            <td>3</td>
+            <td>$4200</td>
           </tr>
           <tr>
-            <td id="haida">Haida Makouangou</td>
-            <td headers="haida">haidaM@hilariousmacaw.com</td>
-            <td headers="haida">5</td>
-            <td headers="haida">$4200</td>
+            <td>Haida Makouangou</td>
+            <td>haidaM@hilariousmacaw.com</td>
+            <td>5</td>
+            <td>$4200</td>
           </tr>
           <tr>
-            <td id="joe">Joe Kusa</td>
-            <td headers="joe">joe.kusa@hilariousmacaw.com</td>
-            <td headers="joe">15</td>
-            <td headers="joe">$5200</td>
+            <td>Joe Kusa</td>
+            <td>joe.kusa@hilariousmacaw.com</td>
+            <td>15</td>
+            <td>$5200</td>
           </tr>
           <tr>
             <td rowspan="4">IT Support</td>
-            <td id="grace">Grace Princia</td>
-            <td headers="grace">G.Princia@hilariousmacaw.com</td>
-            <td headers="grace">15</td>
-            <td headers="grace">$4800</td>
+            <td>Grace Princia</td>
+            <td>G.Princia@hilariousmacaw.com</td>
+            <td>15</td>
+            <td>$4800</td>
           </tr>
           <tr>
-            <td id="rick">Rick Slater</td>
-            <td headers="rick">rick.slater@hilariousmacaw.com</td>
-            <td headers="rick">7</td>
-            <td headers="rick">$4500</td>
+            <td>Rick Slater</td>
+            <td>rick.slater@hilariousmacaw.com</td>
+            <td>7</td>
+            <td>$4500</td>
           </tr>
           <tr>
-            <td id="alice">Alice Waters</td>
-            <td headers="alice">alice.waters@hilariousmacaw.com</td>
-            <td headers="alice">2</td>
-            <td headers="alice">$4000</td>
+            <td>Alice Waters</td>
+            <td>alice.waters@hilariousmacaw.com</td>
+            <td>2</td>
+            <td>$4000</td>
           </tr>
           <tr>
-            <td id="john">John Doe</td>
-            <td headers="john">john.doe@hilariousmacaw.com</td>
-            <td headers="john">4</td>
-            <td headers="john">$4000</td>
+            <td>John Doe</td>
+            <td>john.doe@hilariousmacaw.com</td>
+            <td>4</td>
+            <td>$4000</td>
           </tr>
         </tbody>
         <tfoot>
@@ -166,5 +171,6 @@
     <div data-include="components/footer.html"></div>
   </footer>
   <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </body>
 </html>
