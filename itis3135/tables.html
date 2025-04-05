@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tables for Employee Records Management</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+    thead tr {
+      background-color: #444;
+      color: white;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #e0e0e0;
+    }
+    tfoot th {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Data Tables</h2>
+
+   
+    <h3>Staff Data Overview</h3>
+    <ol>
+      <li>D.I. von Briesen - dvonbri1@hilariousmacaw.com - 25</li>
+      <li>Esam Abdullah - eabdullah@hilariousmacaw.com - 5</li>
+      <li>Medina Gomez - gomez_med8@hilariousmacaw.com - 3</li>
+      <li>Haida Makouangou - haidaM@hilariousmacaw.com - 5</li>
+      <li>Joe Kusa - joe.kusa@hilariousmacaw.com - 15</li>
+      <li>Grace Princia - G.Princia@hilariousmacaw.com - 15</li>
+      <li>Rick Slater - rick.slater@hilariousmacaw.com - 7</li>
+      <li>Alice Waters - alice.waters@hilariousmacaw.com - 2</li>
+      <li>John Doe - john.doe@hilariousmacaw.com - 4</li>
+    </ol>
+
+
+    <h3>Employee Data in Simple Table</h3>
+    <table aria-label="Simple employee data table">
+      <caption>Employee Information</caption>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Years of Service</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>D.I. von Briesen</td><td>dvonbri1@hilariousmacaw.com</td><td>25</td></tr>
+        <tr><td>Esam Abdullah</td><td>eabdullah@hilariousmacaw.com</td><td>5</td></tr>
+        <tr><td>Medina Gomez</td><td>gomez_med8@hilariousmacaw.com</td><td>3</td></tr>
+        <tr><td>Haida Makouangou</td><td>haidaM@hilariousmacaw.com</td><td>5</td></tr>
+        <tr><td>Joe Kusa</td><td>joe.kusa@hilariousmacaw.com</td><td>15</td></tr>
+        <tr><td>Grace Princia</td><td>G.Princia@hilariousmacaw.com</td><td>15</td></tr>
+        <tr><td>Rick Slater</td><td>rick.slater@hilariousmacaw.com</td><td>7</td></tr>
+        <tr><td>Alice Waters</td><td>alice.waters@hilariousmacaw.com</td><td>2</td></tr>
+        <tr><td>John Doe</td><td>john.doe@hilariousmacaw.com</td><td>4</td></tr>
+      </tbody>
+    </table>
+
+   
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+      <figcaption>Employee Information Categorized by Department</figcaption>
+      <table aria-describedby="employeeInfoTable">
+        <thead>
+          <tr>
+            <th scope="col">Department</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Years of Service</th>
+            <th scope="col">Monthly Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Marketing</td>
+            <td id="von">D.I. von Briesen</td>
+            <td headers="von">dvonbri1@hilariousmacaw.com</td>
+            <td headers="von">25</td>
+            <td headers="von">$7500</td>
+          </tr>
+          <tr>
+            <td id="esam">Esam Abdullah</td>
+            <td headers="esam">eabdullah@hilariousmacaw.com</td>
+            <td headers="esam">5</td>
+            <td headers="esam">$5500</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Sales</td>
+            <td id="medina">Medina Gomez</td>
+            <td headers="medina">gomez_med8@hilariousmacaw.com</td>
+            <td headers="medina">3</td>
+            <td headers="medina">$4200</td>
+          </tr>
+          <tr>
+            <td id="haida">Haida Makouangou</td>
+            <td headers="haida">haidaM@hilariousmacaw.com</td>
+            <td headers="haida">5</td>
+            <td headers="haida">$4200</td>
+          </tr>
+          <tr>
+            <td id="joe">Joe Kusa</td>
+            <td headers="joe">joe.kusa@hilariousmacaw.com</td>
+            <td headers="joe">15</td>
+            <td headers="joe">$5200</td>
+          </tr>
+          <tr>
+            <td rowspan="4">IT Support</td>
+            <td id="grace">Grace Princia</td>
+            <td headers="grace">G.Princia@hilariousmacaw.com</td>
+            <td headers="grace">15</td>
+            <td headers="grace">$4800</td>
+          </tr>
+          <tr>
+            <td id="rick">Rick Slater</td>
+            <td headers="rick">rick.slater@hilariousmacaw.com</td>
+            <td headers="rick">7</td>
+            <td headers="rick">$4500</td>
+          </tr>
+          <tr>
+            <td id="alice">Alice Waters</td>
+            <td headers="alice">alice.waters@hilariousmacaw.com</td>
+            <td headers="alice">2</td>
+            <td headers="alice">$4000</td>
+          </tr>
+          <tr>
+            <td id="john">John Doe</td>
+            <td headers="john">john.doe@hilariousmacaw.com</td>
+            <td headers="john">4</td>
+            <td headers="john">$4000</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">Total Years of Service</th>
+            <td>81</td>
+            <td>$49,400</td>
+          </tr>
+        </tfoot>
+      </table>
+    </figure>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
