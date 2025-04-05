@@ -1,6 +1,7 @@
 .selected {
     box-sizing: border-box;
-  }
+}
+
 
 html, body {
     height: 100%;
@@ -12,43 +13,44 @@ html, body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  
-  body {
+}
+
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-  }
-  
+}
 
-  header {
+
+header {
     background-color: #ffffff;
     color: #1C6D49;
     padding: 40px 20px;
     text-align: center;
     border-bottom: 2px solid #1C6D49;
-  }
-  
-  h1, h2, h3 {
+}
+
+h1, h2, h3 {
     color: #1C6D49;
     margin-bottom: 20px;
-  }
-  
-  h1:hover {
+}
+
+h1:hover {
     font-size: 2em;
-  }
-  
-  h2:hover {
+}
+
+h2:hover {
     font-size: 1.6em;
-  }
-  
-  h3:hover {
+}
+
+h3:hover {
     font-size: 1.2em;
-  }
-  
-  main, .maincontainer {
+}
+
+
+main, .maincontainer {
     width: 95%;
     max-width: 1200px;
     margin: 30px auto;
@@ -56,11 +58,11 @@ html, body {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-    box-sizing: border-box; 
-  }
-  
+    box-sizing: border-box;
+}
 
-  footer {
+
+footer {
     background-color: #ffffff;
     color: #333;
     text-align: center;
@@ -68,89 +70,121 @@ html, body {
     margin-top: 40px;
     border-top: 2px solid #1C6D49;
     font-size: 14px;
-  }
-  
-  footer nav a {
+}
+
+footer nav a {
     color: #333;
     text-decoration: none;
     font-size: 1em;
     padding: 5px 10px;
     margin: 0 10px;
     display: inline-block;
-  }
-  
-  footer nav a:hover,
-  footer nav a:focus {
+}
+
+footer nav a:hover,
+footer nav a:focus {
     color: #E3B505;
     outline: none;
-  }
-  
-  
-  table {
+}
+
+
+table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  caption {
+}
+
+
+caption {
     font-size: 1.4em;
     margin-bottom: 10px;
     margin-top: 10px;
     font-weight: bold;
     text-align: left;
     color: #00695c;
-  }
-  
-  thead th {
+}
+
+
+thead th {
     background-color: #004d40;
     color: white;
     text-align: left;
     padding: 12px;
-  }
-  
-  tbody td {
+}
+
+
+tbody td {
     padding: 12px;
     border: 1px solid #b2dfdb;
-  }
-  
-  tbody tr:nth-child(even) {
+}
+
+
+tbody tr:nth-child(even) {
     background-color: #e0f2f1;
-  }
-  
-  tbody tr:nth-child(odd) {
+}
+
+tbody tr:nth-child(odd) {
     background-color: #ffffff;
-  }
-  
-  tbody tr:hover {
+}
+
+
+tbody tr:hover {
     background-color: #c8e6c9;
-  }
-  
-  tfoot {
+}
+
+
+tfoot {
     font-weight: bold;
     background-color: #e0f2f1;
     padding: 10px;
+}
+
+    main {
+        padding: 20px;
+    }
+
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+
+.heading-1, .heading-2, .heading-3 {
+    font-weight: normal;
+    margin: 0;
   }
   
-  @media (max-width: 768px) {
-    body {
-      font-size: 14px;
-    }
+  .heading-1 {
+    font-size: 2.5em;
+  }
   
-    main {
-      padding: 20px;
-    }
+  .heading-2 {
+    font-size: 2em;
+  }
   
-    table {
-      display: block;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-  
-    footer {
-      font-size: 15px;
-    }
+  .heading-3 {
+    font-size: 1.5em;
   }
   
  
+  @media (max-width: 768px) {
+    .heading-1 {
+      font-size: 1.8em;
+    }
+  
+    .heading-2 {
+      font-size: 1.5em; 
+    }
+  
+    .heading-3 {
+      font-size: 1.2em; 
+    }
+  }
   
