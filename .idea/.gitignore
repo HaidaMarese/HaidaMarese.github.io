@@ -6,3 +6,23 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+
+# Ignore VSCode settings folder
+.vscode/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment folder
+env/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore PyCharm/IntelliJ IDEA files
+.idea/
+*.iml
