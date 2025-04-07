@@ -5,51 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tables for Employee Records Management</title>
   <link rel="stylesheet" href="styles/default.css" />
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-    th, td {
-      border: 1px solid #333;
-      padding: 8px;
-      text-align: left;
-    }
-    thead tr {
-      background-color: #444;
-      color: white;
-    }
-    tbody tr:nth-child(odd) {
-      background-color: #f9f9f9;
-    }
-    tbody tr:nth-child(even) {
-      background-color: #e0e0e0;
-    }
-    tfoot th {
-      background-color: #333;
-      color: white;
-    }
-
-    tbody tr:nth-child(odd) {
-      background-color: #f0f0f0;
-    }
-
-    tbody tr:nth-child(even) {
-      background-color: #ffffff;
-    }
-  </style>
 </head>
 
-<body>
-  <header>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  <header class="bg-blue-600 text-white p-4">
     <div data-include="components/header.html"></div>
   </header>
 
-  <main>
-    <h2>Data Tables</h2>
+  <main class="container mx-auto p-4">
+    <h2 class="text-3xl font-semibold mb-4">Data Tables</h2>
 
-    <h3>Staff Data Overview</h3>
-    <ol>
+    <h3 class="text-2xl font-medium mb-2">Staff Data Overview</h3>
+    <ol class="list-decimal pl-5">
       <li>D.I. von Briesen - dvonbri1@hilariousmacaw.com - 25</li>
       <li>Esam Abdullah - eabdullah@hilariousmacaw.com - 5</li>
       <li>Medina Gomez - gomez_med8@hilariousmacaw.com - 3</li>
@@ -61,113 +28,113 @@
       <li>John Doe - john.doe@hilariousmacaw.com - 4</li>
     </ol>
 
-    <h3>Employee Data in Simple Table</h3>
-    <table aria-label="Simple employee data table">
-      <caption>Employee Information</caption>
+    <h3 class="text-2xl font-medium mt-6 mb-2">Employee Data in Simple Table</h3>
+    <table aria-label="Simple employee data table" class="table-auto w-full border-collapse border border-gray-300">
+      <caption class="sr-only">Employee Information</caption>
       <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Email</th>
-          <th scope="col">Years of Service</th>
+        <tr class="bg-gray-200">
+          <th class="border px-4 py-2">Name</th>
+          <th class="border px-4 py-2">Email</th>
+          <th class="border px-4 py-2">Years of Service</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>D.I. von Briesen</td><td>dvonbri1@hilariousmacaw.com</td><td>25</td></tr>
-        <tr><td>Esam Abdullah</td><td>eabdullah@hilariousmacaw.com</td><td>5</td></tr>
-        <tr><td>Medina Gomez</td><td>gomez_med8@hilariousmacaw.com</td><td>3</td></tr>
-        <tr><td>Haida Makouangou</td><td>haidaM@hilariousmacaw.com</td><td>5</td></tr>
-        <tr><td>Joe Kusa</td><td>joe.kusa@hilariousmacaw.com</td><td>15</td></tr>
-        <tr><td>Grace Princia</td><td>G.Princia@hilariousmacaw.com</td><td>15</td></tr>
-        <tr><td>Rick Slater</td><td>rick.slater@hilariousmacaw.com</td><td>7</td></tr>
-        <tr><td>Alice Waters</td><td>alice.waters@hilariousmacaw.com</td><td>2</td></tr>
-        <tr><td>John Doe</td><td>john.doe@hilariousmacaw.com</td><td>4</td></tr>
+        <tr><td class="border px-4 py-2">D.I. von Briesen</td><td class="border px-4 py-2">dvonbri1@hilariousmacaw.com</td><td class="border px-4 py-2">25</td></tr>
+        <tr><td class="border px-4 py-2">Esam Abdullah</td><td class="border px-4 py-2">eabdullah@hilariousmacaw.com</td><td class="border px-4 py-2">5</td></tr>
+        <tr><td class="border px-4 py-2">Medina Gomez</td><td class="border px-4 py-2">gomez_med8@hilariousmacaw.com</td><td class="border px-4 py-2">3</td></tr>
+        <tr><td class="border px-4 py-2">Haida Makouangou</td><td class="border px-4 py-2">haidaM@hilariousmacaw.com</td><td class="border px-4 py-2">5</td></tr>
+        <tr><td class="border px-4 py-2">Joe Kusa</td><td class="border px-4 py-2">joe.kusa@hilariousmacaw.com</td><td class="border px-4 py-2">15</td></tr>
+        <tr><td class="border px-4 py-2">Grace Princia</td><td class="border px-4 py-2">G.Princia@hilariousmacaw.com</td><td class="border px-4 py-2">15</td></tr>
+        <tr><td class="border px-4 py-2">Rick Slater</td><td class="border px-4 py-2">rick.slater@hilariousmacaw.com</td><td class="border px-4 py-2">7</td></tr>
+        <tr><td class="border px-4 py-2">Alice Waters</td><td class="border px-4 py-2">alice.waters@hilariousmacaw.com</td><td class="border px-4 py-2">2</td></tr>
+        <tr><td class="border px-4 py-2">John Doe</td><td class="border px-4 py-2">john.doe@hilariousmacaw.com</td><td class="border px-4 py-2">4</td></tr>
       </tbody>
     </table>
 
-    <h3>Employee Data in Complex Table</h3>
-    <figure>
-      <figcaption>Employee Information Categorized by Department</figcaption>
-      <table aria-label="Complex employee data table">
+    <h3 class="text-2xl font-medium mt-6 mb-2">Employee Data in Complex Table</h3>
+    <figure class="mt-4">
+      <figcaption class="text-xl font-semibold mb-4">Employee Information Categorized by Department</figcaption>
+      <table aria-label="Complex employee data table" class="table-auto w-full border-collapse border border-gray-300">
         <thead>
-          <tr>
-            <th scope="col">Department</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Years of Service</th>
-            <th scope="col">Monthly Salary</th>
+          <tr class="bg-gray-200">
+            <th class="border px-4 py-2">Department</th>
+            <th class="border px-4 py-2">Name</th>
+            <th class="border px-4 py-2">Email</th>
+            <th class="border px-4 py-2">Years of Service</th>
+            <th class="border px-4 py-2">Monthly Salary</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td rowspan="2">Marketing</td>
-            <td>D.I. von Briesen</td>
-            <td>dvonbri1@hilariousmacaw.com</td>
-            <td>25</td>
-            <td>$7500</td>
+            <td class="border px-4 py-2" rowspan="2">Marketing</td>
+            <td class="border px-4 py-2">D.I. von Briesen</td>
+            <td class="border px-4 py-2">dvonbri1@hilariousmacaw.com</td>
+            <td class="border px-4 py-2">25</td>
+            <td class="border px-4 py-2">$7500</td>
           </tr>
           <tr>
-            <td>Esam Abdullah</td>
-            <td>eabdullah@hilariousmacaw.com</td>
-            <td>5</td>
-            <td>$5500</td>
+            <td class="border px-4 py-2">Esam Abdullah</td>
+            <td class="border px-4 py-2">eabdullah@hilariousmacaw.com</td>
+            <td class="border px-4 py-2">5</td>
+            <td class="border px-4 py-2">$5500</td>
           </tr>
           <tr>
-            <td rowspan="3">Sales</td>
-            <td>Medina Gomez</td>
-            <td>gomez_med8@hilariousmacaw.com</td>
-            <td>3</td>
-            <td>$4200</td>
+            <td class="border px-4 py-2" rowspan="3">Sales</td>
+            <td class="border px-4 py-2">Medina Gomez</td>
+            <td class="border px-4 py-2">gomez_med8@hilariousmacaw.com</td>
+            <td class="border px-4 py-2">3</td>
+            <td class="border px-4 py-2">$4200</td>
           </tr>
           <tr>
-            <td>Haida Makouangou</td>
-            <td>haidaM@hilariousmacaw.com</td>
-            <td>5</td>
-            <td>$4200</td>
+            <td class="border px-4 py-2">Haida Makouangou</td>
+            <td class="border px-4 py-2">haidaM@hilariousmacaw.com</td>
+            <td class="border px-4 py-2">5</td>
+            <td class="border px-4 py-2">$4200</td>
           </tr>
           <tr>
-            <td>Joe Kusa</td>
-            <td>joe.kusa@hilariousmacaw.com</td>
-            <td>15</td>
-            <td>$5200</td>
+            <td class="border px-4 py-2">Joe Kusa</td>
+            <td class="border px-4 py-2">joe.kusa@hilariousmacaw.com</td>
+            <td class="border px-4 py-2">15</td>
+            <td class="border px-4 py-2">$5200</td>
           </tr>
           <tr>
-            <td rowspan="4">IT Support</td>
-            <td>Grace Princia</td>
-            <td>G.Princia@hilariousmacaw.com</td>
-            <td>15</td>
-            <td>$4800</td>
+            <td class="border px-4 py-2" rowspan="4">IT Support</td>
+            <td class="border px-4 py-2">Grace Princia</td>
+            <td class="border px-4 py-2">G.Princia@hilariousmacaw.com</td>
+            <td class="border px-4 py-2">15</td>
+            <td class="border px-4 py-2">$4800</td>
           </tr>
           <tr>
-            <td>Rick Slater</td>
-            <td>rick.slater@hilariousmacaw.com</td>
-            <td>7</td>
-            <td>$4500</td>
+            <td class="border px-4 py-2">Rick Slater</td>
+            <td class="border px-4 py-2">rick.slater@hilariousmacaw.com</td>
+            <td class="border px-4 py-2">7</td>
+            <td class="border px-4 py-2">$4500</td>
           </tr>
           <tr>
-            <td>Alice Waters</td>
-            <td>alice.waters@hilariousmacaw.com</td>
-            <td>2</td>
-            <td>$4000</td>
+            <td class="border px-4 py-2">Alice Waters</td>
+            <td class="border px-4 py-2">alice.waters@hilariousmacaw.com</td>
+            <td class="border px-4 py-2">2</td>
+            <td class="border px-4 py-2">$4000</td>
           </tr>
           <tr>
-            <td>John Doe</td>
-            <td>john.doe@hilariousmacaw.com</td>
-            <td>4</td>
-            <td>$4000</td>
+            <td class="border px-4 py-2">John Doe</td>
+            <td class="border px-4 py-2">john.doe@hilariousmacaw.com</td>
+            <td class="border px-4 py-2">4</td>
+            <td class="border px-4 py-2">$4000</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <th colspan="3">Total Years of Service</th>
-            <td>81</td>
-            <td>$49,400</td>
+            <th colspan="3" class="border px-4 py-2">Total Years of Service</th>
+            <td class="border px-4 py-2">81</td>
+            <td class="border px-4 py-2">$49,400</td>
           </tr>
         </tfoot>
       </table>
     </figure>
   </main>
 
-  <footer>
+  <footer class="bg-blue-600 text-white p-4">
     <div data-include="components/footer.html"></div>
   </footer>
   <script src="scripts/HTMLInclude.min.js"></script>

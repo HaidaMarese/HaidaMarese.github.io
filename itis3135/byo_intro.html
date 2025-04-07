@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BYO Intro</title>
+  <link rel="stylesheet" href="styles/default.css"/>
+  
+</head>
+<body>
+  <header>
+    <h1 class="main-title">Welcome to Your Intro Page</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>BYO Intro Page</h2>
+    <h3>Time to BYO Intro! Please fill out the form below so we can create your personalized page.</h3>
+    <form id="intro-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="Haida Makouangou" required>
+
+      <label for="mascot">Mascot:</label>
+      <input type="text" id="mascot" name="mascot" value="Hilarious Macaw" required>
+
+      <label for="image">Image (PNG/JPG):</label>
+      <input type="file" id="image" name="image" accept="image/png, image/jpeg" required>
+
+      <label for="image-caption">Image Caption:</label>
+      <input type="text" id="image-caption" name="image-caption" value="My lovely Hilarious Macaw" required>
+
+      <label for="personal-background">Personal Background:</label>
+      <textarea id="personal-background" name="personal-background" rows="4" required>Born in  Republic of Congo, now living in the US...</textarea>
+
+      <label for="professional-background">Professional Background:</label>
+      <textarea id="professional-background" name="professional-background" rows="4" required>Previous worked at Wells Fargo as Engineering Associate...</textarea>
+
+      <label for="academic-background">Academic Background:</label>
+      <textarea id="academic-background" name="academic-background" rows="4" required>Currently studying Computer SCience  at UNC Charlotte...</textarea>
+
+      <label for="web-background">Background in Web Development:</label>
+      <textarea id="web-background" name="web-background" rows="4" required>Learning Web-Based Application Design and Development...</textarea>
+
+      <label for="platform">Primary Computer Platform:</label>
+      <input type="text" id="platform" name="platform" value="Windows" required>
+
+      <fieldset>
+        <legend>Courses Currently Taking:</legend>
+        <div id="courses">
+          <input type="text" id="course-1" name="courses" placeholder="Enter your courses" required>
+        </div>
+        <button type="button" onclick="addCourse()">Add Course</button>
+      </fieldset>
+
+      <label for="funny-thing">Funny Thing?</label>
+      <textarea id="funny-thing" name="funny-thing" rows="4"></textarea>
+
+      <label for="anything-else">Anything Else?</label>
+      <textarea id="anything-else" name="anything-else" rows="4"></textarea>
+
+      <label>
+        <input type="checkbox" id="agreement" name="agreement" required>
+        I understand that what is on this page is not password-protected and I will not put anything here that I don’t want publicly available.
+      </label>
+
+      <div class="submit-reset-btns">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset" onclick="resetForm()">
+      </div>
+    </form>
+
+    <div id="result" style="display:none;">
+      <h3>My Intro Page:</h3>
+      <div id="result-content"></div>
+      <button onclick="resetForm()">Reset Form</button>
+    </div>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/survey.js" defer></script>
+
+</body>
+</html>
