@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🖊️ Job Application Form - Haida M</title>
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+  <header>
+    <h1>Haida M - ITIS3135 Job Application Form</h1>
+  </header>
+
+  <main>
+    <h2>Job Application Form</h2>
+    <h3>Please complete the form below to share your qualifications and experience..</h3>
+
+    <form action="#" method="POST" class="application-form">
+      
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" size="30" required>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" size="30" required>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" size="30" required>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+      </div>
+
+     
+      <div class="form-group">
+        <label for="cover-letter">Cover Letter:</label>
+        <textarea id="cover-letter" name="cover-letter" placeholder="Write your cover letter here" rows="4" cols="50" required></textarea>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="job-position">Job Position Applied For:</label>
+        <input type="text" id="job-position" name="job-position" placeholder="Job Position" size="30" required>
+      </div>
+
+      
+      <div class="form-group">
+        <label>Skills:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="skill1" name="skills" value="HTML"> HTML
+          <input type="checkbox" id="skill2" name="skills" value="CSS"> CSS
+          <input type="checkbox" id="skill3" name="skills" value="JavaScript"> JavaScript
+          <input type="checkbox" id="skill4" name="skills" value="Python"> Python
+          <input type="checkbox" id="skill5" name="skills" value="Java"> Java
+          <input type="checkbox" id="skill6" name="skills" value="SQL"> SQL
+          <input type="checkbox" id="skill7" name="skills" value="PHP"> PHP
+          <input type="checkbox" id="skill8" name="skills" value="React"> React
+          <input type="checkbox" id="skill9" name="skills" value="NodeJS"> Node.js
+          <input type="checkbox" id="skill10" name="skills" value="Git"> Git
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label>Preferred Job Location:</label>
+        <div class="radio-group">
+          <input type="radio" id="location1" name="location" value="California"> California
+          <input type="radio" id="location2" name="location" value="North Carolina"> North Carolina 
+          <input type="radio" id="location3" name="location" value="Remote"> Remote
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="salary">Expected Salary:</label>
+        <select id="salary" name="salary">
+          <option value="below 65k">Below $65k</option>
+          <option value="65k-120k">$50k - $120k</option>
+          <option value="above120k">Above $120k</option>
+        </select>
+      </div>
+
+      
+      <div class="form-actions">
+        <input type="reset" value="Reset Form" class="reset-btn">
+        <input type="submit" value="Submit Application" class="submit-btn">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="forms.html">Form Page</a>
+    </nav>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>
