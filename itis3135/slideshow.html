@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haida Makouangou 👩🏿‍🦱 - Animal Slideshow</title>
+  <link rel="stylesheet" href="./styles/default.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Haida Makouangou - Animal Slideshow</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Animal Slideshow</h2>
+    <div class="container">
+      
+      <div class="mySlides">
+        <div class="numbertext">1 / 16</div>
+        <img src="images/haida/horse.jpg" alt="H - Horse">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 16</div>
+        <img src="images/haida/allig.jpg" alt="A - Alligator">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 16</div>
+        <img src="images/haida/iguana.jpg" alt="I - Iguana">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 16</div>
+        <img src="images/haida/dolphin.jpg" alt="D - dolphin">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 16</div>
+        <img src="images/haida/albatross.jpg" alt="A - albatross">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 16</div>
+        <img src="images/haida/monkey.jpg" alt="M- monkey">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7 / 16</div>
+        <img src="images/haida/antelope.jpg" alt="A - antelope">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">8 / 16</div>
+        <img src="images/haida/kangaroo.jpg" alt="K- kangaroo">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">9 / 16</div>
+        <img src="images/haida/octopus.jpg" alt="O - octopus">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">10 / 16</div>
+        <img src="images/haida/urial.jpg" alt="U - urial">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">11 / 16</div>
+        <img src="images/haida/armadillo.jpg" alt="A - armadillo">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">12 / 16</div>
+        <img src="images/haida/newt.jpg" alt="N - newt">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">14 / 16</div>
+        <img src="images/haida/giraffe.jpg" alt="G - giraffe">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">15 / 16</div>
+        <img src="images/haida/owl.jpg" alt="o- owl">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">16 / 16</div>
+        <img src="images/haida/urial.jpg" alt="o- owl">
+      </div>
+      
+      
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/haida/horse.jpg" onclick="currentSlide(1)" alt="H -Horse">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/allig.jpg" onclick="currentSlide(2)" alt="A - Alligator">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/iguana.jpg" onclick="currentSlide(3)" alt="I - Iguana">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/dolphin.jpg" onclick="currentSlide(3)" alt="D - Dolphin">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/albatross.jpg" onclick="currentSlide(3)" alt="I - Iguana">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/monkey.jpg" onclick="currentSlide(3)" alt="M - monkey">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/antelope.jpg" onclick="currentSlide(3)" alt="A - allig">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/kangaroo.jpg" onclick="currentSlide(3)" alt="K - kangaroo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/octopus.jpg" onclick="currentSlide(3)" alt="O - octopus">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/urial.jpg" onclick="currentSlide(3)" alt="U - urial">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/armadillo.jpg" onclick="currentSlide(3)" alt="A - armadillo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/newt.jpg" onclick="currentSlide(3)" alt="N - newt">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/giraffe.jpg" onclick="currentSlide(3)" alt="G - giraffe">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/haida/owl.jpg" onclick="currentSlide(3)" alt="O - owl">
+          <div class="column">
+            <img class="demo cursor" src="images/haida/urial.jpg" onclick="currentSlide(3)" alt="U - urial">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+
+ 
+  
+<footer class="bg-blue-600 text-white p-4">
+  
+  <div data-include="components/footer.html"></div>
+</footer>
+<script src="scripts/HTMLInclude.min.js"></script>
+<script src="./scripts/slideshow.js"></script>
+<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+<!-- Notes:
+  - Help received: 
+    - I used the following resources to help with creating the slideshow:
+      - W3Schools (https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp) for guidance on creating a basic JavaScript slideshow.
+      - AI-generated images for the slideshow
+
+  - Challenges:
+    - One of the challenges I faced was ensuring that the image captions properly matched the animals listed in my name.
+    - Another issue was aligning the images to be consistent with the slideshow and gallery layout.
+
+  - Suggestions:
+    - It could be useful to add more customization to the slideshow features, like transition effects and speed control.
+
+  - Statement of Originality:
+    - This is my original work. I did not copy and paste someone else's code. I referenced tutorials and AI-generated images for the content.
+
+  Signed, 
+  Haida Makouangou, April 28, 2025 and 5:09pm.
+-->
+
+</body>
+</html>
