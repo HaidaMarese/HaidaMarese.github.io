@@ -1,4 +1,4 @@
-html, body { 
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -19,6 +19,7 @@ body {
   padding: 0 5%;
 }
 
+/* Header styling */
 header {
   background-color: #f9f9f9;
   color: #556b2f;
@@ -32,10 +33,12 @@ header {
   margin: 0;
 }
 
+/* Headings */
 h2, h3 {
   color: #333;
 }
 
+/* Navigation */
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -68,6 +71,7 @@ nav a:hover {
   font-weight: bold;
 }
 
+
 main {
   padding: 20px;
   max-width: 800px;
@@ -77,6 +81,7 @@ main {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Forms */
 form {
   box-sizing: border-box;
   background-color: #fff;
@@ -111,6 +116,7 @@ select {
 textarea {
   resize: vertical;
 }
+
 
 button, input[type="submit"], input[type="reset"] {
   padding: 10px 20px;
@@ -153,6 +159,7 @@ input[type="reset"]:hover {
   background-color: #145a5d;
 }
 
+
 #result {
   margin-top: 20px;
   padding: 20px;
@@ -161,6 +168,7 @@ input[type="reset"]:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -206,6 +214,7 @@ tfoot {
   padding: 10px;
 }
 
+/* Footer */
 footer {
   background-color: #176a70;
   color: #fff;
@@ -266,34 +275,22 @@ footer .copyright {
   }
 }
 
-
+/* Slideshow */
 .slideshow-container {
   position: relative;
   max-width: 100%;
   width: 100%;
-  height: 700px; 
+  height: 500px;
   margin: auto;
   overflow: hidden;
 }
-
-
-.slideshow-container {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  height: 500px; 
-  margin: auto;
-  overflow: hidden;
-}
-
 
 .mySlides {
   display: none;
-  width: 100%;   
-  height: 100%;  
-  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 
 .fade {
   animation-name: fade;
@@ -304,7 +301,6 @@ footer .copyright {
   from { opacity: 0.4; }
   to { opacity: 1; }
 }
-
 
 .prev, .next {
   position: absolute;
@@ -318,7 +314,6 @@ footer .copyright {
   border: none;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 50%;
   z-index: 10;
 }
 
@@ -336,7 +331,6 @@ footer .copyright {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 .caption-container {
   text-align: center;
   padding: 10px;
@@ -344,9 +338,10 @@ footer .copyright {
   color: white;
 }
 
-
+/* Thumbnails */
 .thumbnail-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 20px;
   gap: 10px;
@@ -354,7 +349,7 @@ footer .copyright {
 }
 
 .thumbnail {
-  width: 300px;  
+  width: 300px;
   height: auto;
   cursor: pointer;
 }
@@ -369,12 +364,4 @@ footer .copyright {
 
 .thumbnail img:hover {
   opacity: 0.7;
-}
-
-
-.thumbnail-container {
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
